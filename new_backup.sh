@@ -8,7 +8,7 @@ BACKUPDIR=" /etc/ /home/ /data/"
 DATE=$(date +%a-%Y-%m-%d-%T) 
 
 # Überprüft ob der Snapshot älter als eine x Minuten ist -> Falls ja, findet der Befehl die Snapshot Datei
-AGE=$(find "/backup/new_backup/" -mmin +1) 
+AGE=$(find "/backup/new_backup/" -mmin +1300) 
 
 #Speichert die Menge der vorhandenen Backups im "/backup/new_backup/" Ordner
 COUNT=$(ls /backup/new_backup/ | wc -l)
